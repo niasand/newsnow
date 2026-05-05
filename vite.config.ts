@@ -26,7 +26,19 @@ export default defineConfig({
       // autoCodeSplitting: true,
     }),
     unimport.vite({
-      dirs: ["src/hooks", "shared", "src/utils", "src/atoms"],
+      dirs: [
+        "src/hooks",
+        "shared/consts.ts",
+        "shared/metadata.ts",
+        "shared/pre-sources.ts",
+        "shared/sources.ts",
+        "shared/type.util.ts",
+        "shared/types.ts",
+        "shared/utils.ts",
+        "shared/verify.ts",
+        "src/utils",
+        "src/atoms",
+      ],
       presets: ["react", {
         from: "jotai",
         imports: ["atom", "useAtom", "useAtomValue", "useSetAtom"],
