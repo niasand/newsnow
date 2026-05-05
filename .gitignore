@@ -8,6 +8,7 @@ dist/
 .wrangler
 .env
 .env.*
+env.server
 dev-dist
 *.tsbuildinfo
 wrangler.toml
